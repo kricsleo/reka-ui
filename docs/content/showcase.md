@@ -65,7 +65,6 @@ projects:
     url: https://cider.sh
     image: https://cider.sh/og.png
 
-
   - title: DevDb
     description: A lightweight VS Code extension that auto-loads your database and provides affordances from your database to aid development and debugging.
     url: https://github.com/damms005/devdb-vscode
