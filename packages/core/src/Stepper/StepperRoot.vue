@@ -1,11 +1,11 @@
 <script lang="ts">
-import type { PrimitiveProps } from '@/Primitive'
 import type { Ref } from 'vue'
 import type { DataOrientation, Direction } from '../shared/types'
-import { Primitive } from '@/Primitive'
-import { createContext, useDirection, useForwardExpose } from '@/shared'
+import type { PrimitiveProps } from '@/Primitive'
 import { useVModel } from '@vueuse/core'
 import { computed, nextTick, ref, toRefs, watch } from 'vue'
+import { Primitive } from '@/Primitive'
+import { createContext, useDirection, useForwardExpose } from '@/shared'
 
 export interface StepperRootContext {
   modelValue: Ref<number | undefined>
@@ -54,7 +54,7 @@ const props = withDefaults(defineProps<StepperRootProps>(), {
 const emits = defineEmits<StepperRootEmits>()
 
 defineSlots<{
-  default: (props: {
+  default?: (props: {
     /** Current step */
     modelValue: number | undefined
     /** Total number of steps */
