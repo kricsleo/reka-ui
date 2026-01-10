@@ -70,7 +70,7 @@ We would love to have your contributions! All PRs are welcome! We need help buil
 4. Open `http://localhost:6006`
 5. Run `pnpm test` to test changes
 
-## Credits
+## Credits ❤️
 
 All credits go to these open-source works and resources
 
